@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@marcoschulte/vue3-progress": "^0.0.7",
     "@popperjs/core": "^2.11.6",
     "@vueuse/core": "^9.13.0",
     "bootstrap": "^5.2.3",

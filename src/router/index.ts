@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutView from '../views/AboutView.vue'
+import BooksView from '../views/BooksView.vue'
 
 declare module 'vue-router' {
     interface RouteMeta {
@@ -33,6 +34,12 @@ const router = createRouter({
             path: '/contact',
             name: 'contact',
             component: ContactView,
+            meta: { transition: 'scale-slide' },
+        },
+        {
+            path: '/books',
+            name: 'books',
+            component: BooksView,
             meta: { transition: 'scale-slide' },
         },
     ]

@@ -12,6 +12,7 @@ const styleObject = reactive({
 </script>
 
 <template>
+    <vue3-progress-bar></vue3-progress-bar>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -33,6 +34,9 @@ const styleObject = reactive({
                         </li>
                         <li class="nav-item">
                             <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+                        </li>
+                        <li class="nav-item">
+                            <RouterLink to="/books" class="nav-link">Books</RouterLink>
                         </li>
                     </ul>
                 </div>
@@ -148,14 +152,12 @@ const styleObject = reactive({
 }
 
 .scale-slide-enter-from {
-    left: -100%;
-    /* right: -100%; */
-    opacity: 1;
+    transform: translateY(200px);
+    opacity: 0;
 }
 
 .scale-slide-enter-to {
-    left: 0%;
-    /* right: 0%; */
+    transform: translateY(0px);
     opacity: 1;
 }
 
